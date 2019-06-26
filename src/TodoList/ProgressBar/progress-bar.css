@@ -1,0 +1,21 @@
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 40px;
+    width: 66.67%;
+    border: black solid 5px;
+    display: flex;
+}
+
+.progress-box {
+    flex-grow: 1;
+    background: white;
+}
+
+.green {
+    background: #8EEB95;
+}

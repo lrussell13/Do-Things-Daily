@@ -1,5 +1,6 @@
 .todo-items {
     display: flex;
+    padding-top: 15px;
 }
 
 .delete {

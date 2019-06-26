@@ -1,3 +1,13 @@
 .todo {
-    padding: 15px;
+    padding: 0 15px;
+}
+
+
+hr {
+    background: black;
+    height: 5px;
+}
+
+#main-hr {
+    margin: 33.5px 15px 0 15px;
 }
