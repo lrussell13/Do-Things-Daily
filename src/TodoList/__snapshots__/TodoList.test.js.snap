@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div>
+  <h1>
+    Today
+  </h1>
+  <div
+    className="progress-container"
+  >
+    <div
+      className="progress-bar"
+    />
+  </div>
+  <hr
+    id="main-hr"
+  />
+  <div
+    className="todo"
+  >
+    <div
+      className="todo-items"
+    >
+      <label
+        className="container"
+      >
+        Code
+        <input
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="todo"
+  >
+    <div
+      className="todo-items"
+    >
+      <label
+        className="container"
+      >
+        Read
+        <input
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="todo"
+  >
+    <div
+      className="todo-items"
+    >
+      <label
+        className="container"
+      >
+        Brush teeth
+        <input
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+    <hr />
+  </div>
+  <div
+    className="todo"
+  >
+    <div
+      className="todo-items"
+    >
+      <label
+        className="container"
+      >
+        Something
+        <input
+          onClick={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+    <hr />
+  </div>
+</div>
+`;
