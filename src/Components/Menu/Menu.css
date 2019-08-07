@@ -1,0 +1,32 @@
+.menu {
+    background: #3232C4;
+    height: 56px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.bar-container {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    width: 320px;
+}
+
+.none {
+    display: none;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
-import TodoList from './TodoList/TodoList';
+import TodoList from './Components/TodoList/TodoList';
 import { todoServices } from './TodoServices';
 import './app.css'
+import Menu from './Components/Menu/Menu';
+//import { Route, Switch } from 'react-router-dom';
 
 
 class App extends React.Component{
   state = {
-    name: '',
     todos: [],
     id: 4
   }
@@ -28,12 +29,13 @@ class App extends React.Component{
   }
 
   componentWillMount(){
-    todoServices.fetchTodos().then(todos => this.setState({todos}))
+    //todoServices.fetchTodos().then(todos => this.setState({todos}))
   }
 
   render(){
     return (
       <main className='App'>
+        <Menu />
         <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo} checkTodo={this.checkTodo}/>
       </main>
     );
