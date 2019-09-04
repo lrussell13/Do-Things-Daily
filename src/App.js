@@ -3,14 +3,11 @@ import TodoList from './Components/TodoList/TodoList';
 import { todoServices } from './TodoServices';
 import './app.css'
 import Menu from './Components/Menu/Menu';
-//import Calendar from './Components/Calendar/Calendar';
-//import { Route, Switch } from 'react-router-dom';
 
 
 class App extends React.Component{
   state = {
     todos: [],
-    id: 4
   }
 
   checkTodo = id => {
@@ -30,7 +27,7 @@ class App extends React.Component{
   }
 
   componentWillMount(){
-    //todoServices.fetchTodos().then(todos => this.setState({todos}))
+    todoServices.getAllTodos().then(todos => this.setState({todos}))
   }
 
   render(){
@@ -38,21 +35,9 @@ class App extends React.Component{
       <main className='App'>
         <Menu />
         <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo} checkTodo={this.checkTodo}/>
-      {/* <Calendar /> */}
       </main>
     );
   }
 }
 
 export default App;
-
-/* 
-login/info
-Sunday-todos
-Monday-todos
-Tuesday-todos
-...
-2 table
-1 for user
-1 for the todos
-*/
